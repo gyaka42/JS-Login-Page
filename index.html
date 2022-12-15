@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!----Login User---->
+    <div class="container">
+        <form action="form" id="login" class="form">
+            <h1 class="form_title">Giris Yap</h1>
+            <div class="form_message form_message--error"></div>
+            <div class="form__input--group">
+                <input type="email" class="form_input" autofocus placeholder="Kullanici adi veya Mail" >
+                <div class="form__input-error-message" ></div>
+            </div>
+            <div class="form__input--group">
+                <input type="password" class="form_input" autofocus placeholder="Sifre" >
+                <div class="form__input-error-message" ></div>
+            </div>
+            <button class="form__button" type="submit">LOGIN</button>
+            <p class="form__text" >
+                <a href="#" class="form__link" id="linkForgotPassword">Sifremi Unuttum</a>
+            </p>
+            <p class="form__text">
+                <a href="#" class="form__link" id="linkLogin">Hesap Olustur</a>
+            </p>
+        </form>
+
+        <!------Sign in user----->
+        <form action="form" id="register" class="form form--hidden">
+            <h1 class="form_title">Kayit Ol</h1>
+            <div class="form_message form_message--error"></div>
+            <div class="form__input--group">
+                <input type="text" id="signupUsername" class="form_input" autofocus required placeholder="Kullanici adi" >
+                <div class="form__input-error-message" ></div>
+            </div>
+            <div class="form__input--group">
+                <input type="email" class="form_input" autofocus required placeholder="Mail Adresi" >
+                <div class="form__input-error-message" ></div>
+            </div>
+            <div class="form__input--group">
+                <input type="password" class="form_input" autofocus required placeholder="Sifre Gir" >
+                <div class="form__input-error-message" ></div>
+            </div>
+            <div class="form__input--group">
+                <input type="password" class="form_input" autofocus required placeholder="Tekrar Sifre Gir" >
+                <div class="form__input-error-message" ></div>
+            </div>
+            <button class="form__button" type="submit">LOGIN</button>
+            <p class="form__text" >
+                <a href="#" class="form__link">Sifremi Unuttum</a>
+            </p>
+            <p class="form__text">
+                <a href="#" class="form__link" id="linkCreateAccount">Geri</a>
+            </p>
+        </form>
+
+        <!----Forgot Password---->
+        <form action="form" id="forgot" class="form form--hidden">
+            <h1 class="form_title">Sifremi Unuttum</h1>
+            <div class="form_message form_message--error"></div>
+            <div class="form__input--group">
+                <input type="email" class="form_input" autofocus required placeholder="Mail Adresi" >
+                <div class="form__input-error-message" ></div>
+            </div>
+            <button class="form__button" type="submit">Sifre Sifirla</button>
+            <p class="form__text">
+                <a href="#" class="form__link">Geri git</a>
+            </p>
+        </form>
+
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
